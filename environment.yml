@@ -1,0 +1,40 @@
+name: hidro
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+
+  # --- Nucleo cientifico ---
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - seaborn
+
+  # --- Datos espaciales y series de tiempo ---
+  - xarray
+  - netcdf4
+  - geopandas
+  - rasterio
+  - rioxarray
+
+  # --- Estadistica y aprendizaje automatico ---
+  - statsmodels
+  - scikit-learn
+
+  # --- Calibracion, sensibilidad e incertidumbre ---
+  - spotpy
+  - pathos          # paralelizacion de SPOTPY
+  - numba
+  - pytables        # bases de datos HDF5 que genera SPOTPY
+
+  # --- Entorno de trabajo ---
+  - jupyterlab
+  - ipykernel
+  - openpyxl
+  - tqdm
+
+  # --- Lo que no esta en conda-forge va aqui, al final ---
+  - pip
+  - pip:
+      - hydroeval

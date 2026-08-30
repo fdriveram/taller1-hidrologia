@@ -1,0 +1,37 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+env/
+
+# --- conda ---
+.conda/
+
+# --- Sistema operativo ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Editores ---
+.vscode/
+.idea/
+
+# --- Salidas pesadas: los repositorios son para codigo, no para archivos grandes ---
+resultados/*.png
+resultados/*.pdf
+resultados/*.csv
+!resultados/.gitkeep
+*.hdf5
+*.h5
+*.nc
+*.tif
+
+# --- Bases de datos que genera SPOTPY ---
+*.db
+*.out
+
+# --- Credenciales: nunca ---
+*.key
+*.pem
+.env
